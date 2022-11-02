@@ -1,0 +1,32 @@
+<div class="background" style="background-color: #F5F5F5;">
+  <!-- <div class="container mt-5"> -->
+    <div class="row justify-content-center align-items-center" >
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-42 pb-2 pb-md-0 mb-md-5">Add Taxi</h3>
+            <form [formGroup]="Form" (ngSubmit)="save()">
+              <div class="form-group col mb-4">
+                <label>registration no: </label>
+                <input formControlName="regNo" type="text" id="disabled-input-2" aria-label="disabled input 2" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="Disabled readonly input" >
+              </div>
+              <div class="form-group col mb-4">
+                <label>Model year </label>
+                <input formControlName="modelYear" type="text" id="disabled-input-2" aria-label="disabled input 2" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="Disabled readonly input" >
+              </div>
+              <div class="form-group col mb-4">
+                <label>Driver </label>
+                <input formControlName="driver" type="text" id="disabled-input-2" aria-label="disabled input 2" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="Disabled readonly input" >
+              </div>
+              <div class="form-group">
+                <button (click)="save()" type="submit" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">save taxi</button>
+        
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+</div> 
+<router-outlet></router-outlet>
+
